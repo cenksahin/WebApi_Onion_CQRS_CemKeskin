@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{20B15708-4E8D-4C48-8C19-8562E7DBC873}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C94B2C5C-48E4-4E43-93AA-A7D708EBB420}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FDC91B8F-3135-43BB-A498-3FE8964BF322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Application", "Core\YoutubeApi.Application\YoutubeApi.Application.csproj", "{DF714710-BEA0-4907-99A3-256B0B1CB303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Domain", "Core\YoutubeApi.Domain\YoutubeApi.Domain.csproj", "{4F415B79-C996-4365-9926-0AC5B9FB8CDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Infrastructure", "Infrastructure\YoutubeApi.Infrastructure\YoutubeApi.Infrastructure.csproj", "{59413A54-BA52-422B-84E6-AAFADCBCB8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Persistence", "Infrastructure\YoutubeApi.Persistence\YoutubeApi.Persistence.csproj", "{41D95B19-5AEB-47EF-9FC3-0159B1F6C1E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Api", "Presentation\YoutubeApi.Api\YoutubeApi.Api.csproj", "{4BC87BF1-3FE9-4760-9A18-57DA7CBA13DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3CD9D94-5FA7-4524-AE49-FE4FDB379262}"
+	ProjectSection(SolutionItems) = preProject
+		Aciklama.txt = Aciklama.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF714710-BEA0-4907-99A3-256B0B1CB303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF714710-BEA0-4907-99A3-256B0B1CB303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF714710-BEA0-4907-99A3-256B0B1CB303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF714710-BEA0-4907-99A3-256B0B1CB303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F415B79-C996-4365-9926-0AC5B9FB8CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F415B79-C996-4365-9926-0AC5B9FB8CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F415B79-C996-4365-9926-0AC5B9FB8CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F415B79-C996-4365-9926-0AC5B9FB8CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59413A54-BA52-422B-84E6-AAFADCBCB8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59413A54-BA52-422B-84E6-AAFADCBCB8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59413A54-BA52-422B-84E6-AAFADCBCB8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59413A54-BA52-422B-84E6-AAFADCBCB8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D95B19-5AEB-47EF-9FC3-0159B1F6C1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D95B19-5AEB-47EF-9FC3-0159B1F6C1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D95B19-5AEB-47EF-9FC3-0159B1F6C1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D95B19-5AEB-47EF-9FC3-0159B1F6C1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC87BF1-3FE9-4760-9A18-57DA7CBA13DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC87BF1-3FE9-4760-9A18-57DA7CBA13DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC87BF1-3FE9-4760-9A18-57DA7CBA13DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC87BF1-3FE9-4760-9A18-57DA7CBA13DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF714710-BEA0-4907-99A3-256B0B1CB303} = {20B15708-4E8D-4C48-8C19-8562E7DBC873}
+		{4F415B79-C996-4365-9926-0AC5B9FB8CDF} = {20B15708-4E8D-4C48-8C19-8562E7DBC873}
+		{59413A54-BA52-422B-84E6-AAFADCBCB8A9} = {C94B2C5C-48E4-4E43-93AA-A7D708EBB420}
+		{41D95B19-5AEB-47EF-9FC3-0159B1F6C1E2} = {C94B2C5C-48E4-4E43-93AA-A7D708EBB420}
+		{4BC87BF1-3FE9-4760-9A18-57DA7CBA13DF} = {FDC91B8F-3135-43BB-A498-3FE8964BF322}
+	EndGlobalSection
+EndGlobal
