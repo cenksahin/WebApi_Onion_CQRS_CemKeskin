@@ -1,3 +1,14 @@
 
-kaldým: 14:52
-4. videoda
+kaldým: 09:40
+6. videoda
+
+
+
+yükle:
+-YoutubeApi.Persistence
+Bogus (temp data yüklemek için kullanýlýr)
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+-YoutubeApi.Api
+Microsoft.EntityFrameworkCore.Design (Design kütüphanesi sadece baþlangýç projesine yüklenir)
