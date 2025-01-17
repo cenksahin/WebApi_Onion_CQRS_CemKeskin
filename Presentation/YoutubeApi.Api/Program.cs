@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Configuration;
+using YoutubeApi.Application;
 using YoutubeApi.Persistence;
 
 
@@ -25,6 +26,7 @@ builder.Configuration.SetBasePath(environment.ContentRootPath).AddJsonFile("apps
 
 //ekle
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddApplication();
 
 
 var app = builder.Build();

@@ -1,15 +1,18 @@
 
-kaldým:
-9. videoda
+kaldým: 07:15
+11. videoda
 
 
 
 yükle:
--YoutubeApi.Persistence
+-YoutubeApi.Persistence:
 Bogus (temp data yüklemek için kullanýlýr)
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 
--YoutubeApi.Api
+-YoutubeApi.Api:
 Microsoft.EntityFrameworkCore.Design (Design kütüphanesi sadece baþlangýç projesine (Startup Project) yüklenir)
 Swashbuckle.AspNetCore (swagger ekraný gelsin diye yüklenir: https://localhost:5276/swagger/index.html)
+
+-YoutubeApi.Application:
+MediatR
