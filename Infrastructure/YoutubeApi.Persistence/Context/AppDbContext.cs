@@ -8,6 +8,10 @@ namespace YoutubeApi.Persistence.Context
 {
     public class AppDbContext : DbContext
     {
+        public AppDbContext(DbContextOptions options) : base(options)
+        {
+        }
+
         public DbSet<Brand> Brand { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<Detail> Detail { get; set; }
@@ -17,7 +21,7 @@ namespace YoutubeApi.Persistence.Context
         {
             optionsBuilder
                 .UseSqlServer("server=CSAHIN\\MSSQLSERVER2022; database=YoutubeApi; integrated security=true; MultipleActiveResultSets=true; Trusted_Connection=True; TrustServerCertificate=True;")
-                .ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning)); //migration yaparken dinamik verilerden (new DateTime(), DateTime.Now, Guid.NewGuid()) kaynaklı hata vermesin diye ekledik. 
+                .ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning)); //migration yaparken Configurations klasöründeki dinamik verilerden (new DateTime(), DateTime.Now, Guid.NewGuid()) kaynaklı hata vermesin diye ekledik. 
 
             base.OnConfiguring(optionsBuilder);
         }
