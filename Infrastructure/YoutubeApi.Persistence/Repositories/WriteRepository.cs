@@ -8,13 +8,13 @@ namespace YoutubeApi.Persistence.Repositories
 {
     public class WriteRepository<T> : IWriteRepository<T> where T : class, IEntityBase, new()
     {
-        private readonly AppDbContext _appDbContext;
-        public WriteRepository(AppDbContext appDbContext)
+        private readonly AppDbContext _dbContext;
+        public WriteRepository(AppDbContext DbContext)
         {
-            _appDbContext = appDbContext;
+            _dbContext = DbContext;
         }
 
-        private DbSet<T> Table { get => _appDbContext.Set<T>(); }
+        private DbSet<T> Table { get => _dbContext.Set<T>(); }
 
 
         public async Task AddAsync(T entity)

@@ -1,6 +1,6 @@
 
-kaldým: 12:00
-8. videoda
+kaldým:
+9. videoda
 
 
 
@@ -11,4 +11,5 @@ Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 
 -YoutubeApi.Api
-Microsoft.EntityFrameworkCore.Design (Design kütüphanesi sadece baþlangýç projesine yüklenir)
+Microsoft.EntityFrameworkCore.Design (Design kütüphanesi sadece baþlangýç projesine (Startup Project) yüklenir)
+Swashbuckle.AspNetCore (swagger ekraný gelsin diye yüklenir: https://localhost:5276/swagger/index.html)

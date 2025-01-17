@@ -10,13 +10,13 @@ namespace YoutubeApi.Persistence.Repositories
 {
     public class ReadRepository<T> : IReadRepository<T> where T : class, IEntityBase, new()
     {
-        private readonly AppDbContext _appDbContext;
-        public ReadRepository(AppDbContext appDbContext)
+        private readonly AppDbContext _dbContext;
+        public ReadRepository(AppDbContext DbContext)
         {
-            _appDbContext = appDbContext;
+            _dbContext = DbContext;
         }
 
-        private DbSet<T> Table { get => _appDbContext.Set<T>(); }
+        private DbSet<T> Table { get => _dbContext.Set<T>(); }
 
 
         public async Task<int> CountAsync(Expression<Func<T, bool>>? predicate = null)
