@@ -1,5 +1,5 @@
 
-kaldým: 07:15
+kaldým: 21:10
 11. videoda
 
 
@@ -16,3 +16,6 @@ Swashbuckle.AspNetCore (swagger ekraný gelsin diye yüklenir: https://localhost:5
 
 -YoutubeApi.Application:
 MediatR
+
+-YoutubeApi.Mapper
+Microsoft.Extensions.DependencyInjection.Abstractions
